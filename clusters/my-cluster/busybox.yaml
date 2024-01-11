@@ -15,7 +15,7 @@ spec:
       terminationGracePeriodSeconds: 0
       containers:
       - name: busybox
-        image: docker.io/antonosmond491/busybox:0.0.2 # {"$imagepolicy":"flux-system:busybox"}
+        image: docker.io/antonosmond491/busybox:0.0.3 # {"$imagepolicy":"flux-system:busybox"}
         command: ["tail", "-f", "/dev/null"]
         resources:
           limits:
