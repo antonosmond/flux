@@ -1,0 +1,22 @@
+---
+apiVersion: image.toolkit.fluxcd.io/v1beta2
+kind: ImageRepository
+metadata:
+  name: busybox
+  namespace: flux-system
+spec:
+  image: docker.io/antonosmond491/busybox
+  interval: 1m
+---
+apiVersion: image.toolkit.fluxcd.io/v1beta2
+kind: ImagePolicy
+metadata:
+  name: busybox
+  namespace: flux-system
+spec:
+  imageRepositoryRef:
+    name: busybox
+    namespace: flux-system
+  policy:
+    semver:
+      range: 0.0.x
