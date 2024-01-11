@@ -1,4 +1,4 @@
 tags:
   - serviceName: busybox
     containerName: busybox
-    tag: 0.0.8 # {"$imagepolicy":"flux-system:busybox:tag"}
+    tag: 0.0.9 # {"$imagepolicy":"flux-system:busybox:tag"}
