@@ -16,6 +16,7 @@ spec:
       - name: busybox
         image: docker.io/antonosmond491/busybox:0.0.2 # {"$imagepolicy":"flux-system:busybox"}
         command: ["tail", "-f", "/dev/null"]
+        terminationGracePeriodSeconds: 0
         resources:
           limits:
             memory: "64Mi"
